@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import {Star} from "./Star";
+import {AccordionTitle} from "./AccordionTitle";
+import {AccordionBody} from "./AccordionBody";
 
 function App() {
     return (
         <div className="App">
             <Rating/>
-            <According/>
+            <Accordion/>
         </div>
     );
 }
@@ -25,15 +27,12 @@ export const Rating = () => {
     )
 }
 
-export const According = () => {
+export const Accordion = () => {
     return (
+
         <div>
-            <div>Menu</div>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+          <AccordionTitle/>
+            <AccordionBody/>
         </div>
     )
 }
